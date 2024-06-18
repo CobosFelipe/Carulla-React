@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+  font-family: Nunito, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+nav{
+  background-color: #84c855;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 25px;
+}
+
+.nav-a{
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+}
+
+.nav-text{
+  margin: 0;
+  font-weight: 500;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.nav-input{
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  border-style: none;
+  font-weight: bold;
+  font-size: 15px;
+  width: 300px;
+}
+
+.nav-input::placeholder{
+  color: lightgray;
+}
+
+.carulla-logo{
+  width: 30px;
+  height: 30px;
+}
+
+/* Product style */
+.product-grid{
+  display: grid;
+  margin: auto;
+  padding: 5rem;
+  gap: .5rem;
+}
+
+.product-card{
+  padding: 0 12px;
+  max-width: 250px;
+  min-height: 550px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: .5rem;
+}
+
+.product-card img{
+  width: 100%;
+}
+
+.product-card p, h2{
+  margin: 0;
+}
+
+.btn-agregar-carrito{
+  display: flex;
+  background-color: #67397b;
+  font-weight: 400;
+  width: 80%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.btn-agregar-carrito img{
+  max-height: 20px;
+  max-width: 20px;
+  margin-left: 10px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
